@@ -1,0 +1,105 @@
+eyebrow: R&D AND QUALITY
+title: 研发与品质体系
+lead: >-
+  从概念设计到量产出货，以 APQP 贯穿全流程，用体系与数据保证每一批产品的一致性。
+
+rd:
+  title: 研发能力
+  en: R & D
+  points:
+    - 拥有电子、机械等专业出身的高级人才团队，在 Wire Harness、Cable 领域具备丰富的技术经验。
+    - 自主研发 UL1007 / UL1569 压花线等产品，均获得 UL 认证，可有效改善大功率电脑电源的制造成本并优化散热性能。
+    - 现阶段该压花线产品为我司独有，并能够为客户提供线束技术支持，协助客户新产品开发与个性化方案落地。
+  image: assets/images/facility/lab-projection.jpg
+
+system:
+  title: 管理体系
+  en: MANAGEMENT SYSTEM
+  cards:
+    - tag: ISO 9001
+      title: 质量管理体系认证
+      desc: 覆盖线材（DC 线、高精度电子线组件）与电子连接器销售全流程。
+    - tag: ISO 14001
+      title: 环境管理体系认证
+      desc: 持续致力绿色、环保、节能与低碳设计，确保产品质量达国际水平。
+    - tag: UL
+      title: 产品安全认证
+      desc: UL1007、UL1569 及 16Pin PCIe 12V-2x6 等高规格线材均通过 UL 认证。
+    - tag: APQP
+      title: 先期产品质量策划
+      desc: 从概念设计、设计开发、过程开发、试生产到生产，全程信息反馈与持续改进。
+    - tag: NPI
+      title: 阶段设计审查
+      desc: 新产品导入阶段设置设计审查（NUDD），提前识别与管理风险。
+    - tag: PATENT
+      title: 自主专利
+      desc: 已获多项外观设计与实用新型专利，涵盖电源线束梳理等结构创新。
+
+flow_title: 全流程品质管制
+flow:
+  - code: IQC
+    name: 来料检验
+    items:
+      - 供应商技术支持
+      - 来料检查，实施 MIL-STD-1916 抽样标准，抽样以「0 收 1 退」
+      - 推动供应商改善
+  - code: IPQC
+    name: 制程检验
+    items:
+      - 工序检查，制定 IPQC 专用检验 SIP
+      - 制程监督
+      - 工序改善活动
+  - code: QE/QA
+    name: 品质保证
+    items:
+      - 品质保证体系，细化流程与预防管制方法
+      - 客诉处理与 Team 解析能力培训
+      - 仪器仪校管理
+  - code: OQC
+    name: 出货检验
+    items:
+      - 产品出货检查，实施 MIL-STD-1916 抽样标准，抽样以「0 收 1 退」
+      - 产品可靠性测试
+
+equipment:
+  - name: LCR METER
+    cn: LCR 电桥测试仪
+    image: assets/images/facility/lab-lcr.jpg
+  - name: 高精度投影测量仪
+    cn: PRECISION PROJECTION MEASURING
+    image: assets/images/facility/lab-projection.jpg
+  - name: 电动拉力测试机
+    cn: ELECTRIC TENSION TESTER
+    image: assets/images/facility/lab-tension.jpg
+  - name: 端子剖面分析仪
+    cn: TERMINAL SECTION ANALYSIS
+    image: assets/images/facility/lab-section.jpg
+
+certificates:
+  - name: ISO 9001:2015
+    kind: 质量管理体系认证
+    image: assets/images/certs/iso9001.jpg
+  - name: ISO 14001
+    kind: 环境管理体系认证
+    image: assets/images/certs/iso14001.jpg
+  - name: UL 1007
+    kind: 认证线材
+    image: assets/images/certs/ul-1007.jpg
+  - name: UL 1569
+    kind: 认证线材
+    image: assets/images/certs/ul-1569.jpg
+  - name: UL 12V-2x6
+    kind: 16Pin PCIe 线材认证
+    image: assets/images/certs/ul-2x6.jpg
+  - name: 外观设计专利
+    kind: 卡扣式电源线束梳理器
+    image: assets/images/certs/patent-1.jpg
+  - name: 外观设计专利
+    kind: 电源线梳理器
+    image: assets/images/certs/patent-2.jpg
+  - name: 外观设计专利
+    kind: 电源线梳理器
+    image: assets/images/certs/patent-3.jpg
+  - name: 实用新型专利
+    kind: 电源线梳理结构
+    image: assets/images/certs/patent-4.jpg

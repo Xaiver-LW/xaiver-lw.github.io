@@ -1,0 +1,28 @@
+<section class="section section-figures" id="figures">
+  <div class="wrap">
+    <div class="stats">
+      {% for item in site.data.figures.stats %}
+      <article class="stat reveal" data-delay="{{ forloop.index }}">
+        <div class="stat-value">
+          <span class="count" data-count="{{ item.value }}">{{ item.value }}</span><i>{{ item.suffix }}</i>
+        </div>
+        <h3>{{ item.label }}</h3>
+        <p>{{ item.note }}</p>
+      </article>
+      {% endfor %}
+    </div>
+
+    <div class="equip">
+      <p class="equip-title reveal">生产与检测设备 <em>EQUIPMENT</em></p>
+      <ul class="equip-list">
+        {% for item in site.data.figures.equipment %}
+        <li class="reveal" data-delay="{{ forloop.index }}">
+          <span class="equip-qty"><b class="count" data-count="{{ item.qty }}">{{ item.qty }}</b>{{ item.unit }}</span>
+          <span class="equip-name">{{ item.name }}</span>
+          <span class="equip-en">{{ item.en }}</span>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,43 @@
+stats:
+  - value: 300
+    suffix: 人
+    label: 员工总数
+    note: 直接生产 260 人 · 间接人员 40 人
+  - value: 2
+    suffix: 大
+    label: 制造基地
+    note: 桂林 · 重庆
+  - value: 20
+    suffix: 年
+    label: 团队行业经验
+    note: 长期服务国际一流客户
+  - value: 7
+    suffix: 条
+    label: 自动流水线
+    note: 配套 25 套检测设备
+
+equipment:
+  - name: 全自动穿壳机
+    en: AUTO HOUSING INSERTER
+    qty: 6
+    unit: 台
+  - name: 铆压端子机
+    en: CRIMPING MACHINE
+    qty: 20
+    unit: 台
+  - name: 半自动铆压端子机
+    en: SEMI-AUTO CRIMPER
+    qty: 30
+    unit: 台
+  - name: 注塑成型机
+    en: INJECTION MOLDING
+    qty: 5
+    unit: 台
+  - name: 检测设备
+    en: INSPECTION EQUIPMENT
+    qty: 25
+    unit: 套
+  - name: 自动流水线
+    en: AUTO ASSEMBLY LINE
+    qty: 7
+    unit: 条

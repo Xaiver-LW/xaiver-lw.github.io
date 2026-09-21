@@ -1,0 +1,50 @@
+<section class="section section-contact" id="contact">
+  <div class="wrap">
+    <header class="sec-head">
+      <p class="eyebrow reveal">CONTACT US</p>
+      <h2 class="sec-title reveal" data-delay="1">联系我们</h2>
+      <p class="lead sec-lead reveal" data-delay="2">
+        无论是产品选型、线束定制还是新产品开发，欢迎与我们联系，我们将在一个工作日内回复。
+      </p>
+    </header>
+
+    <div class="contact-grid">
+      <div class="contact-list reveal">
+        <div class="contact-item">
+          <span class="contact-label">公司名称 / COMPANY</span>
+          <p class="contact-value">{{ site.data.company.name_cn }}</p>
+          <p class="contact-sub">{{ site.data.company.name_en }}</p>
+        </div>
+        <div class="contact-item">
+          <span class="contact-label">地址 / ADDRESS</span>
+          <p class="contact-value">{{ site.data.company.address_cn }}</p>
+          <p class="contact-sub">{{ site.data.company.address_en }}</p>
+        </div>
+        <div class="contact-item">
+          <span class="contact-label">电话 / TEL</span>
+          <p class="contact-value"><a href="tel:{{ site.data.company.phone_href }}">{{ site.data.company.phone }}</a></p>
+        </div>
+        <div class="contact-item">
+          <span class="contact-label">邮箱 / EMAIL</span>
+          <p class="contact-value"><a href="mailto:{{ site.data.company.email }}">{{ site.data.company.email }}</a></p>
+        </div>
+      </div>
+
+      <aside class="contact-card reveal" data-delay="1">
+        <p class="cc-eyebrow">在线询价</p>
+        <h3>获取产品目录与报价</h3>
+        <p class="cc-desc">发送您的需求、图纸或样品规格，我们提供选型建议、打样与量产方案。</p>
+        <a class="btn btn-primary btn-block" href="mailto:{{ site.data.company.email }}?subject=%E4%BA%A7%E5%93%81%E8%AF%A2%E4%BB%B7%20-%20LINEWELL">
+          <span>发送询价邮件</span>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M12 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <ul class="cc-list">
+          <li><span>联系人</span>{{ site.data.company.contact_person }}</li>
+          <li><span>电话</span>{{ site.data.company.phone }}</li>
+          <li><span>邮箱</span>{{ site.data.company.email }}</li>
+          <li><span>官网</span>{{ site.data.company.website }}</li>
+        </ul>
+      </aside>
+    </div>
+  </div>
+</section>

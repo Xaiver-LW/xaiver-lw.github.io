@@ -1,0 +1,62 @@
+eyebrow: PATENTED TECHNOLOGY
+title: ROG Equalizer
+subtitle: 重新定义供电保护 · REDEFINED POWER PROTECTION
+kicker: 平行结构设计 · 主动平衡每一路引脚电流
+
+lead: >-
+  随着新一代显卡持续突破 600W，传统 12V-2x6 电源线无法均匀分配由连接器到显卡的大电流，
+  在高功率负载下可能使局部接点温度升高，甚至导致连接器过热损伤。
+  采用专利电流平衡技术的 ROG Equalizer，主动平衡每一路引脚的电流负载，
+  大幅降低连接器温升，保障长期、稳定、可靠的电力输送。
+
+image: assets/images/products/hero-cable.webp
+image_alt: ROG Equalizer 12V-2x6 高电流电源线束
+
+features:
+  - title: 平衡供电
+    en: BALANCED POWER DELIVERY
+    desc: 主动均流设计，避免单路引脚过载。
+  - title: 更大载流
+    en: ENLARGE WIRE LOAD CAPACITY
+    desc: 单根线载流能力由 9.2A 提升至 17A。
+  - title: 更低温度
+    en: REDUCED TEMPERATURE
+    desc: 极限测试温度由 146℃ 降至 73.4℃。
+  - title: 加倍保护
+    en: TWICE THE PROTECTION
+    desc: 适配 GPU Tweak III Power Detector+。
+  - title: 规格兼容
+    en: ATX 3.1 · PCIE 5.1
+    desc: 兼容新一代电源与显卡平台。
+  - title: 高级压花线
+    en: PREMIUM ETCHED CABLE
+    desc: 软质压花线身，线材管理更从容。
+
+compare:
+  col_metric: 对比项目
+  col_std: 标准 12V-2x6
+  col_eq: ROG Equalizer
+  rows:
+    - name: 单根线载流能力
+      en: SINGLE WIRE CURRENT CAPACITY
+      std: 9.2 A
+      eq: 17 A
+      std_bar: 54
+      eq_bar: 100
+      trend: 载流更高
+    - name: 极限测试温度
+      en: EXTREME TEST TEMPERATURE
+      std: 146 ℃
+      eq: 73.4 ℃
+      std_bar: 100
+      eq_bar: 50
+      trend: 温度更低
+    - name: 热插拔风险
+      en: HOT-PLUG RISK
+      std: 高
+      eq: 很低
+      std_bar: 88
+      eq_bar: 18
+      trend: 风险更低
+
+source: 测试方式：移除 12V-2x6 12Pin PCIe 电源线中部的四根导线后，在最大电流负载下评估线缆温度表现。数据来源：hwbusters

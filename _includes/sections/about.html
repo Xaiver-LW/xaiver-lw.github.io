@@ -1,0 +1,31 @@
+<section class="section" id="about">
+  <div class="wrap">
+    <header class="sec-head">
+      <p class="eyebrow reveal">{{ site.data.about.eyebrow }}</p>
+      <h2 class="sec-title reveal" data-delay="1">{{ site.data.about.title }}</h2>
+    </header>
+
+    <div class="about-grid">
+      <div class="about-copy">
+        {% for p in site.data.about.paragraphs %}
+        <p class="lead reveal" data-delay="{{ forloop.index }}">{{ p }}</p>
+        {% endfor %}
+
+        <div class="pillars">
+          {% for item in site.data.about.pillars %}
+          <article class="pillar reveal" data-delay="2">
+            <span class="pillar-num">{{ item.num }}</span>
+            <h3>{{ item.title }}<em>{{ item.en }}</em></h3>
+            <p>{{ item.desc }}</p>
+          </article>
+          {% endfor %}
+        </div>
+      </div>
+
+      <figure class="about-figure reveal" data-delay="2">
+        <img src="{{ site.data.about.image }}" alt="{{ site.data.about.image_alt }}" loading="lazy" width="1200" height="900">
+        <figcaption>{{ site.data.about.image_caption }}</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>

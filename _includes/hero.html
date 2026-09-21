@@ -1,0 +1,50 @@
+<section class="hero" id="top">
+  <div class="hero-bg" aria-hidden="true">
+    <span class="hero-tex"></span>
+    <span class="orb orb-1" data-parallax="0.10"></span>
+    <span class="orb orb-2" data-parallax="-0.16"></span>
+    <span class="orb orb-3" data-parallax="0.06"></span>
+    <span class="grid"></span>
+  </div>
+
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <p class="hero-eyebrow reveal">{{ site.data.hero.eyebrow_en }}</p>
+      <p class="hero-eyebrow-cn reveal" data-delay="1">{{ site.data.hero.eyebrow_cn }}</p>
+
+      <h1 class="hero-title">
+        <span class="reveal" data-delay="2">{{ site.data.hero.headline_1 }}</span>
+        <span class="reveal" data-delay="3"><em>{{ site.data.hero.headline_2 }}</em></span>
+      </h1>
+
+      <p class="hero-lead reveal" data-delay="4">{{ site.data.hero.lead }}</p>
+
+      <div class="hero-actions reveal" data-delay="5">
+        <a class="btn btn-primary" href="#products">
+          <span>了解产品与方案</span>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M12 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a class="btn btn-ghost" href="#contact">联系我们</a>
+      </div>
+
+      <ul class="hero-ticker reveal" data-delay="6">
+        {% for item in site.data.hero.ticker %}
+        <li>{{ item }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+
+    <figure class="hero-visual reveal" data-delay="3">
+      <span class="hero-halo" aria-hidden="true"></span>
+      <img src="{{ site.data.hero.hero_image }}" alt="{{ site.data.hero.hero_alt }}" width="1500" height="668" fetchpriority="high">
+      <figcaption>
+        <span class="chip-dot"></span>ROG Equalizer · 12V-2x6 · UL 认证
+      </figcaption>
+    </figure>
+  </div>
+
+  <a class="scroll-cue" href="#about" aria-label="向下滚动">
+    <span class="scroll-cue-line"></span>
+    <span class="scroll-cue-text">SCROLL</span>
+  </a>
+</section>

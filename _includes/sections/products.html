@@ -1,0 +1,46 @@
+<section class="section" id="products">
+  <div class="wrap">
+    <header class="sec-head">
+      <p class="eyebrow reveal">{{ site.data.products.eyebrow }}</p>
+      <h2 class="sec-title reveal" data-delay="1">{{ site.data.products.title }}</h2>
+      <p class="lead sec-lead reveal" data-delay="2">{{ site.data.products.lead }}</p>
+    </header>
+
+    <div class="cards">
+      {% for item in site.data.products.items %}
+      <article class="card reveal" data-delay="{{ forloop.index }}">
+        <div class="card-media" data-fit="{{ item.fit }}">
+          <img src="{{ item.image }}" alt="{{ item.title }}" loading="lazy">
+          <span class="card-tag">{{ item.tag }}</span>
+        </div>
+        <div class="card-body">
+          <h3>{{ item.title }}</h3>
+          <p class="card-en">{{ item.en }}</p>
+          <p class="card-desc">{{ item.desc }}</p>
+          <ul class="card-specs">
+            {% for s in item.specs %}
+            <li>{{ s }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+
+    <div class="details">
+      {% for d in site.data.products.details %}
+      <figure class="detail reveal" data-delay="{{ forloop.index }}">
+        <span class="detail-media"><img src="{{ d.image }}" alt="{{ d.title }}" loading="lazy"></span>
+        <figcaption>
+          <span class="detail-title">{{ d.title }}</span>
+          <span class="detail-en">{{ d.en }}</span>
+        </figcaption>
+      </figure>
+      {% endfor %}
+      <div class="detail-note reveal" data-delay="4">
+        <p>适配工业 / 家电 / 智能设备</p>
+        <p class="detail-note-en">COMPATIBLE WITH INDUSTRIAL · HOME APPLIANCE · SMART DEVICES</p>
+      </div>
+    </div>
+  </div>
+</section>

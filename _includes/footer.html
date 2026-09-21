@@ -1,0 +1,30 @@
+<footer class="footer">
+  <div class="wrap footer-inner">
+    <div class="footer-brand">
+      <img src="assets/images/logo-light.png" alt="LINEWELL 莱因维尔" class="footer-logo">
+      <p class="footer-motto">{{ site.data.company.motto_cn }}</p>
+      <p class="footer-motto-en">{{ site.data.company.motto_en }}</p>
+    </div>
+
+    <nav class="footer-nav" aria-label="页脚导航">
+      {% for item in site.data.nav %}
+      <a href="#{{ item.id }}">{{ item.label }}</a>
+      {% endfor %}
+    </nav>
+
+    <div class="footer-contact">
+      <p>{{ site.data.company.name_cn }}</p>
+      <p>{{ site.data.company.address_cn }}</p>
+      <p><a href="tel:{{ site.data.company.phone_href }}">{{ site.data.company.phone }}</a> · <a href="mailto:{{ site.data.company.email }}">{{ site.data.company.email }}</a></p>
+    </div>
+  </div>
+
+  <div class="wrap footer-bottom">
+    <p>&copy; <span id="year">2025</span> {{ site.data.company.name_en }}. All rights reserved.</p>
+    <p class="footer-note">Built with Jekyll</p>
+  </div>
+</footer>
+
+<button class="to-top" id="toTop" aria-label="回到顶部">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>

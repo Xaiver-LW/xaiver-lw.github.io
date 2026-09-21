@@ -1,0 +1,27 @@
+eyebrow: COMPANY PROFILE
+title: 为成为全球专业的电子连接线研发制造商而生
+image: assets/images/facility/guilin-wall.jpg
+image_alt: 桂林莱因维尔线束有限责任公司
+image_caption: 桂林制造基地 · GUILIN PLANT
+
+paragraphs:
+  - >-
+    深圳莱因维尔实业有限公司总部坐落于深圳市光明区，研发生产基地分布于桂林、重庆两地。
+    公司生产基地正为 HP、Dell、Lenovo 等行业一流客户提供具有较大比重的产品供应。
+  - >-
+    同时，我们通过自身创新获得了电源行业 ASUS、ROG、Great Wall、CWT、Seasonic 等头部厂商的合作。
+    创新、品质、高效，是我们服务市场与服务客户的唯一标准。
+
+pillars:
+  - num: "01"
+    title: 创新
+    en: INNOVATION
+    desc: 自研压花线材结构与高电流端子方案，持续改善大功率电源的制造成本与散热性能。
+  - num: "02"
+    title: 品质
+    en: QUALITY
+    desc: ISO9001 与 ISO14001 双体系运行，全程精密检测，出货实施 MIL-STD-1916 抽样标准。
+  - num: "03"
+    title: 高效
+    en: EFFICIENCY
+    desc: 两大制造基地与全自动化产线协同，快速响应客户的量产爬坡与定制化需求。

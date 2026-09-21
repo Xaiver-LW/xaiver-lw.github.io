@@ -1,0 +1,29 @@
+<section class="section section-partners" id="partners">
+  <div class="wrap">
+    <header class="sec-head">
+      <p class="eyebrow reveal">{{ site.data.partners.eyebrow }}</p>
+      <h2 class="sec-title reveal" data-delay="1">{{ site.data.partners.title }}</h2>
+      <p class="lead sec-lead reveal" data-delay="2">{{ site.data.partners.lead }}</p>
+    </header>
+
+    <div class="p-groups">
+      {% for g in site.data.partners.groups %}
+      <article class="p-group reveal" data-delay="{{ forloop.index }}">
+        <h4>{{ g.title }}<em>{{ g.en }}</em></h4>
+        <p>{{ g.desc }}</p>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+
+  <div class="marquee reveal" aria-label="合作客户">
+    <div class="marquee-track" data-marquee>
+      {% for l in site.data.partners.marquee %}
+      <span class="marquee-item"><img src="assets/images/clients/{{ l.file }}" alt="{{ l.name }}" decoding="async" title="{{ l.name }}"></span>
+      {% endfor %}
+      {% for l in site.data.partners.marquee %}
+      <span class="marquee-item" aria-hidden="true"><img src="assets/images/clients/{{ l.file }}" alt="" decoding="async"></span>
+      {% endfor %}
+    </div>
+  </div>
+</section>

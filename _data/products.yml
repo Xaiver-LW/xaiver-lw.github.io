@@ -1,0 +1,83 @@
+eyebrow: PRODUCTS & SOLUTIONS
+title: 产品与方案
+lead: >-
+  覆盖电竞电源模块线束、压花线材、高电流连接器与全系列线对板连接器，
+  并提供从线束技术支持到个性化定制的完整服务。
+
+items:
+  - tag: GAMING
+    fit: cover
+    title: 电竞电源模块线束
+    en: GAMING PSU MODULE CABLE
+    image: assets/images/products/psu-rog.jpg
+    desc: 面向 12V-2x6 / 12VHPWR 高功率平台，采用高导电率铜材与高电流端子，稳定承载大功率显卡与 CPU 供电。
+    specs:
+      - 12V-2x6 / 12VHPWR
+      - 600W 及以上平台
+      - 编织 / 压花线材
+
+  - tag: PATENT
+    fit: cover
+    title: UL1007 / UL1569 压花线
+    en: EMBOSSED / ETCHED CABLE
+    image: assets/images/products/cable-cut.jpg
+    desc: 自主开发的压花结构线材，在同等截面下带来更优的散热表现与更低的制造成本，已获 UL 认证，现阶段为独有产品。
+    specs:
+      - UL1007 / UL1569
+      - 改善散热性能
+      - 降低电源成本
+
+  - tag: CONNECTOR
+    fit: contain
+    title: 16Pin PCIe 12V-2x6 连接器
+    en: 16PIN PCIE 12V-2x6 CONNECTOR
+    image: assets/images/products/equalizer-connector.png
+    desc: 连接器到板与线束组件一体化交付，配合高电流合金端子，兼顾插拔可靠性与长期载流稳定性。
+    specs:
+      - Connector to Board
+      - Cable Assembly
+      - 合金铜端子
+
+  - tag: WIRE-TO-BOARD
+    fit: contain
+    title: 全系列线对板连接器
+    en: WIRE-TO-BOARD CONNECTORS
+    image: assets/images/products/pinout.png
+    desc: 端子 / 塑壳 / 针座 / 刺破 IDC 全系列供应，覆盖 4.2 / 3.0 / 3.81 / 5.08 mm 全间距，适配工业、家电与智能设备。
+    specs:
+      - 2P - 24PIN 全 PIN 位
+      - 全间距 4.2/3.0/3.81/5.08
+      - 直脚款 / 弯脚款
+
+  - tag: CABLE SET
+    fit: contain
+    title: 主板 / CPU / PCIe / SATA 线缆
+    en: MOTHERBOARD · CPU · PCIE · SATA
+    image: assets/images/products/psu-tuf.png
+    desc: 覆盖电源内部与整机配线的主流线缆品类，UL 认证据高规格线材搭配耐高电流端子，输出稳定。
+    specs:
+      - 主板电源线
+      - CPU 供电线
+      - PCIe / SATA / 周边
+
+  - tag: ODM / OEM
+    fit: contain
+    title: 线束定制与技术支持
+    en: CUSTOM HARNESS & TECH SUPPORT
+    image: assets/images/products/etched-cable.jpg
+    desc: 依托自有 UL 认证线材与模具能力，为客户提供线束技术支持、协助新产品开发，并输出个性化的连接解决方案。
+    specs:
+      - 专业线束定制
+      - 协助新产品开发
+      - 个性化方案输出
+
+details:
+  - image: assets/images/products/conn-plug-a.png
+    title: 端子与塑壳
+    en: TERMINALS & HOUSINGS
+  - image: assets/images/products/conn-plug-b.png
+    title: 针座与刺破 IDC
+    en: HEADERS & IDC
+  - image: assets/images/products/equalizer-connector.png
+    title: 高电流合金端子
+    en: ALLOY COPPER TERMINAL

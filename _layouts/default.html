@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang }}" data-theme="dark">
+{% include head.html %}
+<body>
+  <a class="skip-link" href="#main">跳到主要内容</a>
+
+  <!-- 顶部滚动进度 -->
+  <div class="scroll-progress" aria-hidden="true"><span id="scrollProgress"></span></div>
+
+  {% include nav.html %}
+
+  <!-- 右侧区块导航 -->
+  <nav class="rail" id="rail" aria-label="区块导航">
+    <ul>
+      {% for item in site.data.nav %}
+      <li><a href="#{{ item.id }}" data-rail="{{ item.id }}"><span class="rail-dot"></span><span class="rail-label">{{ item.short }}</span></a></li>
+      {% endfor %}
+    </ul>
+  </nav>
+
+  <main id="main">
+    {{ content }}
+  </main>
+
+  {% include footer.html %}
+  {% include scripts.html %}
+</body>
+</html>

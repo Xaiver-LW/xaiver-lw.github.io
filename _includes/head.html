@@ -1,0 +1,30 @@
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="{{ site.theme_color }}">
+
+  <title>{{ page.html_title }}</title>
+  <meta name="description" content="{{ page.html_desc }}">
+  <meta name="author" content="{{ site.title }}">
+  <meta name="keywords" content="电子连接线,线束定制,压花线,UL1007,UL1569,12V-2x6,12VHPWR,线对板连接器,ROG Equalizer,莱因维尔,LINEWELL,深圳莱因维尔">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="{{ site.title }}">
+  <meta property="og:description" content="{{ page.html_desc }}">
+  <meta property="og:image" content="assets/images/og-cover.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="assets/images/favicon-128.png" type="image/png" sizes="128x128">
+  <link rel="icon" href="assets/images/favicon-64.png" type="image/png" sizes="64x64">
+  <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
+
+  <link rel="preload" as="image" href="{{ site.data.hero.hero_image }}">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <script>
+    /* 开启动画增强样式；若交互脚本未能加载，2.5s 后自动回退为静态展示，避免内容不可见 */
+    document.documentElement.classList.add('js');
+    setTimeout(function () {
+      if (!window.__linewellReady) document.documentElement.classList.remove('js');
+    }, 2500);
+  </script>
+</head>

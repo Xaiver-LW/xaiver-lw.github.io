@@ -1,0 +1,88 @@
+<section class="section" id="quality">
+  <div class="wrap">
+    <header class="sec-head">
+      <p class="eyebrow reveal">{{ site.data.quality.eyebrow }}</p>
+      <h2 class="sec-title reveal" data-delay="1">{{ site.data.quality.title }}</h2>
+      <p class="lead sec-lead reveal" data-delay="2">{{ site.data.quality.lead }}</p>
+    </header>
+
+    <!-- 研发 -->
+    <div class="rd">
+      <figure class="rd-figure reveal">
+        <img src="{{ site.data.quality.rd.image }}" alt="研发与检测" loading="lazy">
+      </figure>
+      <div class="rd-copy reveal" data-delay="1">
+        <h3>{{ site.data.quality.rd.title }}<em>{{ site.data.quality.rd.en }}</em></h3>
+        <ul class="tick-list">
+          {% for point in site.data.quality.rd.points %}
+          <li>{{ point }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+
+    <!-- 体系 -->
+    <div class="sys">
+      <h3 class="sub-title reveal">{{ site.data.quality.system.title }}<em>{{ site.data.quality.system.en }}</em></h3>
+      <div class="sys-grid">
+        {% for c in site.data.quality.system.cards %}
+        <article class="sys-card reveal" data-delay="{{ forloop.index }}">
+          <span class="sys-tag">{{ c.tag }}</span>
+          <h4>{{ c.title }}</h4>
+          <p>{{ c.desc }}</p>
+        </article>
+        {% endfor %}
+      </div>
+    </div>
+
+    <!-- 流程 -->
+    <div class="flow">
+      <h3 class="sub-title reveal">{{ site.data.quality.flow_title }}</h3>
+      <div class="flow-grid">
+        {% for f in site.data.quality.flow %}
+        <article class="flow-card reveal" data-delay="{{ forloop.index }}">
+          <span class="flow-code">{{ f.code }}</span>
+          <h4>{{ f.name }}</h4>
+          <ul>
+            {% for it in f.items %}
+            <li>{{ it }}</li>
+            {% endfor %}
+          </ul>
+        </article>
+        {% endfor %}
+      </div>
+    </div>
+
+    <!-- 设备 -->
+    <div class="labs">
+      <h3 class="sub-title reveal">检测与分析能力 <em>LAB &amp; INSPECTION</em></h3>
+      <ul class="lab-list">
+        {% for e in site.data.quality.equipment %}
+        <li class="reveal" data-delay="{{ forloop.index }}">
+          <img src="{{ e.image }}" alt="{{ e.name }}" loading="lazy">
+          <div>
+            <span class="lab-name">{{ e.name }}</span>
+            <span class="lab-cn">{{ e.cn }}</span>
+          </div>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+
+    <!-- 证书 -->
+    <div class="certs">
+      <h3 class="sub-title reveal">认证与专利 <em>CERTIFICATES &amp; PATENTS</em></h3>
+      <div class="cert-grid">
+        {% for c in site.data.quality.certificates %}
+        <figure class="cert reveal" data-delay="{{ forloop.index }}">
+          <img src="{{ c.image }}" alt="{{ c.name }}" loading="lazy">
+          <figcaption>
+            <span class="cert-name">{{ c.name }}</span>
+            <span class="cert-kind">{{ c.kind }}</span>
+          </figcaption>
+        </figure>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,29 @@
+eyebrow: PARTNERS
+title: 与一流品牌同行
+lead: >-
+  公司生产基地正为 HP、Dell、Lenovo 等行业一流客户提供具有较大比重的产品供应，
+  并通过自身创新获得电源行业头部厂商的长期合作。
+
+marquee:
+  - { file: hp.png, name: HP }
+  - { file: dell.png, name: Dell }
+  - { file: lenovo.png, name: Lenovo }
+  - { file: asus.png, name: ASUS 华硕 }
+  - { file: rog.png, name: ROG }
+  - { file: corsair.png, name: Corsair 美商海盗船 }
+  - { file: seasonic.png, name: Seasonic 海韵 }
+  - { file: cwt.png, name: CWT }
+  - { file: greatwall.png, name: Great Wall 长城 }
+  - { file: segotep.png, name: Segotep 鑫谷 }
+  - { file: zotac.png, name: ZOTAC 索泰 }
+  - { file: wentai.png, name: WENTAI }
+  - { file: fsp.png, name: FSP 全汉 }
+  - { file: hec.png, name: HEC 伟训 }
+
+groups:
+  - title: 整机品牌
+    en: SYSTEM BRANDS
+    desc: 笔记本电脑与整机线束的长期供应客户。
+  - title: 电源与机电品牌
+    en: POWER & COMPONENT BRANDS
+    desc: 电竞电源模块线束与高电流连接方案的合作伙伴。

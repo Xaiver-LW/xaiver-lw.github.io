@@ -1,0 +1,35 @@
+eyebrow: MANUFACTURING
+title: 两大制造基地
+lead: >-
+  深圳总部统筹研发与销售，桂林、重庆两地承担电子连接线与线束的规模化制造，
+  以稳定的产能与一致的过程管控支撑客户量产交付。
+
+plants:
+  - index: "01"
+    name: 桂林基地
+    en: GUILIN PLANT
+    focus: 电子连接线束
+    focus_en: WIRE HARNESS
+    capacity: 8-10W
+    capacity_note: 套 / 月
+    image: assets/images/facility/guilin-line.jpg
+    desc: 线束组件主力基地，承担大批量线束组装与出货。
+  - index: "02"
+    name: 重庆基地
+    en: CHONGQING PLANT
+    focus: 电子连接线束
+    focus_en: WIRE HARNESS
+    capacity: 5-7W
+    capacity_note: 套 / 月
+    image: assets/images/facility/chongqing-floor.jpg
+    desc: 面向中西部客户群，缩短交付半径与响应周期。
+
+gallery:
+  - image: assets/images/facility/line-auto.jpg
+    caption: 自动化装配与在线检测产线
+  - image: assets/images/facility/assembly-lines.jpg
+    caption: 线束组装流水线
+  - image: assets/images/facility/equipment-auto.jpg
+    caption: 全自动组合线束智能装配端子机 EVT-680
+  - image: assets/images/facility/cleanroom.jpg
+    caption: 十万级洁净装配车间

@@ -1,0 +1,59 @@
+<section class="section section-eq" id="equalizer">
+  <div class="eq-bg" aria-hidden="true"><span class="eq-tex"></span></div>
+
+  <div class="wrap">
+    <header class="sec-head sec-head-eq">
+      <p class="eyebrow reveal">{{ site.data.equalizer.eyebrow }}</p>
+      <h2 class="sec-title sec-title-lg reveal" data-delay="1">{{ site.data.equalizer.title }}</h2>
+      <p class="eq-sub reveal" data-delay="1">{{ site.data.equalizer.subtitle }}</p>
+      <p class="eq-kicker reveal" data-delay="2">{{ site.data.equalizer.kicker }}</p>
+    </header>
+
+    <div class="eq-top">
+      <div class="eq-lead reveal" data-delay="2">
+        <p class="lead">{{ site.data.equalizer.lead }}</p>
+      </div>
+      <figure class="eq-figure reveal" data-delay="3">
+        <span class="eq-halo" aria-hidden="true"></span>
+        <img src="{{ site.data.equalizer.image }}" alt="{{ site.data.equalizer.image_alt }}" loading="lazy" width="1500" height="668">
+      </figure>
+    </div>
+
+    <div class="eq-features">
+      {% for item in site.data.equalizer.features %}
+      <article class="eq-feature reveal" data-delay="{{ forloop.index }}">
+        <h4>{{ item.title }}</h4>
+        <p class="eq-feature-en">{{ item.en }}</p>
+        <p class="eq-feature-desc">{{ item.desc }}</p>
+      </article>
+      {% endfor %}
+    </div>
+
+    <div class="eq-compare reveal">
+      <div class="cmp-head">
+        <span class="cmp-cell cmp-metric">{{ site.data.equalizer.compare.col_metric }}</span>
+        <span class="cmp-cell cmp-std">{{ site.data.equalizer.compare.col_std }}</span>
+        <span class="cmp-cell cmp-eq">{{ site.data.equalizer.compare.col_eq }}</span>
+      </div>
+
+      {% for row in site.data.equalizer.compare.rows %}
+      <div class="cmp-row">
+        <div class="cmp-cell cmp-metric">
+          <span class="cmp-name">{{ row.name }}</span>
+          <span class="cmp-en">{{ row.en }}</span>
+        </div>
+        <div class="cmp-cell cmp-std">
+          <span class="cmp-value">{{ row.std }}</span>
+          <span class="cmp-bar"><i style="--w: {{ row.std_bar }}%"></i></span>
+        </div>
+        <div class="cmp-cell cmp-eq">
+          <span class="cmp-value">{{ row.eq }}</span>
+          <span class="cmp-bar"><i style="--w: {{ row.eq_bar }}%"></i></span>
+        </div>
+      </div>
+      {% endfor %}
+
+      <p class="cmp-source">{{ site.data.equalizer.source }}</p>
+    </div>
+  </div>
+</section>

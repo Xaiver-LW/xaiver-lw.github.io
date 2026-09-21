@@ -1,0 +1,44 @@
+<section class="section" id="plants">
+  <div class="wrap">
+    <header class="sec-head">
+      <p class="eyebrow reveal">{{ site.data.plants.eyebrow }}</p>
+      <h2 class="sec-title reveal" data-delay="1">{{ site.data.plants.title }}</h2>
+      <p class="lead sec-lead reveal" data-delay="2">{{ site.data.plants.lead }}</p>
+    </header>
+
+    <div class="plants">
+      {% for p in site.data.plants.plants %}
+      <article class="plant reveal" data-delay="{{ forloop.index }}">
+        <div class="plant-media">
+          <img src="{{ p.image }}" alt="{{ p.name }}" loading="lazy">
+          <span class="plant-index">{{ p.index }}</span>
+        </div>
+        <div class="plant-body">
+          <h3>{{ p.name }}</h3>
+          <p class="plant-en">{{ p.en }}</p>
+          <p class="plant-desc">{{ p.desc }}</p>
+          <div class="plant-meta">
+            <div>
+              <span class="meta-label">产品线</span>
+              <span class="meta-value">{{ p.focus }}</span>
+            </div>
+            <div>
+              <span class="meta-label">产能</span>
+              <span class="meta-value meta-cap">{{ p.capacity }}<em>{{ p.capacity_note }}</em></span>
+            </div>
+          </div>
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+
+    <div class="gallery">
+      {% for g in site.data.plants.gallery %}
+      <figure class="gallery-item reveal" data-delay="{{ forloop.index }}">
+        <img src="{{ g.image }}" alt="{{ g.caption }}" loading="lazy">
+        <figcaption>{{ g.caption }}</figcaption>
+      </figure>
+      {% endfor %}
+    </div>
+  </div>
+</section>

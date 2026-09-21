@@ -1,0 +1,32 @@
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a class="brand" href="#top" aria-label="{{ site.title }}">
+      <img src="assets/images/logo-light.png" alt="LINEWELL 莱因维尔" class="brand-logo">
+    </a>
+
+    <nav class="nav-links" aria-label="主导航">
+      {% for item in site.data.nav %}
+      <a href="#{{ item.id }}" data-nav="{{ item.id }}">{{ item.short }}</a>
+      {% endfor %}
+    </nav>
+
+    <div class="nav-actions">
+      <a class="nav-cta" href="#contact">联系我们</a>
+      <button class="nav-burger" id="navBurger" aria-label="打开菜单" aria-expanded="false" aria-controls="mobileMenu">
+        <span></span><span></span>
+      </button>
+    </div>
+  </div>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <nav aria-label="移动端导航">
+      {% for item in site.data.nav %}
+      <a href="#{{ item.id }}" data-nav="{{ item.id }}"><em>{{ item.label }}</em><span>{{ item.short }}</span></a>
+      {% endfor %}
+    </nav>
+    <div class="mobile-menu-foot">
+      <p>{{ site.data.company.email }}</p>
+      <p>{{ site.data.company.phone }}</p>
+    </div>
+  </div>
+</header>
