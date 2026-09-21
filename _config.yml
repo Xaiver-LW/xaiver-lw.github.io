@@ -2,21 +2,21 @@
 #  Linewell 莱因维尔 · Jekyll 站点配置
 # ============================================================
 
-title: "深圳莱因维尔实业有限公司"
+title: "深圳市莱因维尔实业有限公司"
 title_en: "Shenzhen Linewell Co., Ltd."
 short_title: "LINEWELL"
 tagline: "以创新为驱动 · 以品质为基石"
 description: >-
-  深圳莱因维尔实业有限公司是一家专业电子连接线与线对板连接器研发制造商，
+  深圳市莱因维尔实业有限公司是一家专业电子连接线与线对板连接器研发制造商，
   自研 UL1007 / UL1569 压花线，通过 ISO9001、ISO14001 及 UL 认证，
   为全球一流电源与整机品牌提供稳定可靠的连接方案。
 
 email: "Bunny.su@szlinewell.com"
 phone: "+86 188 2339 4372"
-address_cn: "深圳市光明区凤凰街道塘家社区塘家东路1号8栋801"
-address_en: "B-801, No.8 Building, No.1 Tangjia East Road, Tangjia Community, Fenghuang Street, Guangming District, Shenzhen, China"
+address_cn: "深圳市光明区凤凰街道特区建发乐府广场1B栋801号"
+address_en: "No.1B801, Yuefu Square, No.481 Guangming Avenue, Dongkeng Community, Feng Huang Street Guangming District, Shenzhen City"
 
-url: ""            # 例如 https://www.szlinewell.com
+url: "https://szlinewell.cn"   # 例如 https://www.szlinewell.com
 baseurl: ""        # 例如 /linewell
 
 lang: zh-CN
